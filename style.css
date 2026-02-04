@@ -34,9 +34,9 @@ main {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 180px); /* fixed width */
+  grid-template-columns: repeat(auto-fill, 180px); 
   gap: 15px;
-  justify-content: start; /* align left */
+  justify-content: start; 
 }
 
 
