@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FreshMart Grocery Store</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🛒 FreshMart Grocery Billing</h1>
+
+    <input type="text" id="searchInput" placeholder="Search products..." />
+  </header>
+
+
+  <main>
+
+    <section>
+      <h2>Products</h2>
+      <div id="productContainer" class="grid"></div>
+    </section>
+
+
+    <section class="cart-section">
+      <h2>Your Cart</h2>
+
+      <div id="cartContainer" class="grid"></div>
+
+      <p id="emptyMsg" class="empty">Cart is empty 🛒</p>
+
+      <div class="bill">
+        <p>Subtotal: ₹ <span id="subtotal">0</span></p>
+        <p>Tax (5%): ₹ <span id="tax">0</span></p>
+        <p><b>Total: ₹ <span id="total">0</span></b></p>
+
+        <button id="clearCart">Clear Cart</button>
+        <button onclick="window.print()">Print Invoice</button>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="toast" class="toast">Added to cart ✅</div>
+
+  <script src="app.js"></script>
+</body>
+</html>
